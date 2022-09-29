@@ -57,7 +57,7 @@ return(
             <SelectedDiaryText>{selectedDiary.diaryDescription}</SelectedDiaryText>
         </SelectedDiaryBody>
 
-    </SelectedDiaryContainer>: <SelectedDiaryTitleText>Nothing to see here </SelectedDiaryTitleText> }
+    </SelectedDiaryContainer>: <Navigate replace to={'/'}/>}
     </>
     
 )

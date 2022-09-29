@@ -5,7 +5,7 @@ import { TextArea } from '../form/InputComponent'
 import CheckIcon from '@mui/icons-material/Check'
 import { DiaryTitle, EditDiaryFormContainer, EditFeedBackMessageFormContainer, EditFormButttonContainer, EditFormButttonMessageContainer } from './EditDiary.styles'
 import { useAppDispatch, useAppSelector } from '../hooks/storeHooks'
-import {useLocation, useNavigate} from 'react-router-dom'
+import {Navigate, useNavigate} from 'react-router-dom'
 import { AddToDiary } from '../../store/diarySlice'
 import { addDiaryForUser } from '../../utils/firebaseUtil'
 const EditDiary = () => {
@@ -67,7 +67,7 @@ navigate(-1)
           </EditFormButttonContainer> 
 
 
-      </EditDiaryFormContainer> : <h5>Nothing to see here</h5> }
+      </EditDiaryFormContainer> : <Navigate replace to={'/'}/> }
   </>
     
   )

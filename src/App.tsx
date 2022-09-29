@@ -6,6 +6,7 @@ import { authUser, IAuthSlice } from './store/authSlice';
 import { getDiaryInfo } from './utils/firebaseUtil';
 import { AddToDiary } from './store/diarySlice';
 import SideBar from './components/sidebar/SideBar';
+import Loading from './components/loading/Loading.styles';
 
 const HomePage = React.lazy(() => import('./pages/home/index'))
 const AddEntryPage = React.lazy(() => import('./pages/addEntry/AddEntry'))
@@ -47,7 +48,7 @@ const dispatch = useAppDispatch()
     
   },[])
   return (
-    <Suspense fallback={<p>...loading</p>}>
+    <Suspense fallback={<Loading/>}>
 
    <Routes>
    

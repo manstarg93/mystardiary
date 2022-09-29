@@ -8,8 +8,7 @@ import {doc,getDoc, setDoc, getFirestore} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 
-const envfile = process.env.REACT_APP_FIREBASE_KEY
-console.log(envfile)
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_KEY as string,
   authDomain: "stardiary.firebaseapp.com",
